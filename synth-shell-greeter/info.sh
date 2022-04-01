@@ -403,6 +403,27 @@ printMonitorHDD()
 }
 
 
+##------------------------------------------------------------------------------
+##
+printMonitorCustomFolder()
+{
+        assert_is_set $bar_cf_units
+        assert_is_set $bar_cf_crit_percent
+        assert_is_set $bar_cf_folders
+
+        local format=$1
+        local idx=0
+        if [ $# -ge 2 ]; then
+           idx=$2
+        fi
+        local label="${bar_cf_labels[idx]}"
+        local device="${bar_cf_folders[idx]}"
+        local units="${bar_cf_units[idx]}"
+        local crit_percent="${bar_cf_crit_percent[idx]}"
+
+        printStorageMonitor "$label" "$device" "$units" "$format" "$crit_percent"
+}
+
 
 ##------------------------------------------------------------------------------
 ##

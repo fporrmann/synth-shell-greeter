@@ -142,6 +142,16 @@ printStatusInfo()
 			HDDROOT_MON%)   printMonitorHDD        '0/0';;
 			HDDHOME_MON)    printMonitorHome       'a/b';;
 			HDDHOME_MON%)   printMonitorHome       '0/0';;
+			HDDCF_0_MON)      printMonitorCustomFolder 'a/b' 0;;
+			HDDCF_0_MON%)     printMonitorCustomFolder '0/0' 0;;
+			HDDCF_1_MON)      printMonitorCustomFolder 'a/b' 1;;
+			HDDCF_1_MON%)     printMonitorCustomFolder '0/0' 1;;
+			HDDCF_2_MON)      printMonitorCustomFolder 'a/b' 2;;
+			HDDCF_2_MON%)     printMonitorCustomFolder '0/0' 2;;
+			HDDCF_3_MON)      printMonitorCustomFolder 'a/b' 3;;
+			HDDCF_3_MON%)     printMonitorCustomFolder '0/0' 3;;
+			HDDCF_4_MON)      printMonitorCustomFolder 'a/b' 4;;
+			HDDCF_4_MON%)     printMonitorCustomFolder '0/0' 4;;
 			CPUTEMP_MON)    printMonitorCPUTemp;;
 
 			*)              printInfoLine "Unknown" "Check your config";;

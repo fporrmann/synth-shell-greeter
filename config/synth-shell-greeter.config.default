@@ -13,12 +13,11 @@
 ##   extra spaces at the last line and end it with '\n'.
 ##==============================================================================
 
-logo="\e[38;5;213m                          __  __
-        _______  ______  / /_/ /_
-       / ___/ / / / __ \/ __/ __ \
-      /__  / /_/ / / / / /_/ / / /
-     /____/\__  /_/ /_/\__/_/ /_/
-          /____/
+logo="\e[38;5;213m    __ _______    ____  ____  ____ ______
+   / //_/ ___/   / __ \/ __ \/ __ /_  __/
+  / ,<  \__ \   / /_/ / / / / / / // /
+ / /| |___/ /  / _, _/ /_/ / /_/ // /
+/_/ |_/____/  /_/ |_|\____/\____//_/
 \e[38;5;45m   _____ __  __________    __
   / ___// / / / ____/ /   / /
   \__ \/ /_/ / __/ / /   / /
@@ -86,8 +85,7 @@ print_info="
 	SWAP_MON
 	HDDROOT_MON
 	HDDHOME_MON
-	PALETTE"
-
+	HDDCF_0_MON"
 
 
 ##==============================================================================
@@ -131,11 +129,13 @@ bar_ram_crit_percent=75
 bar_swap_crit_percent=25
 bar_hdd_crit_percent=85
 bar_home_crit_percent=85
+bar_cf_crit_percent=(90)
 
 bar_ram_units="MB"
 bar_swap_units="MB"
 bar_hdd_units="GB"
 bar_home_units="GB"
+bar_cf_units=("GB")
 
 cpu_crit_print=true
 cpu_crit_print_num=3
@@ -151,6 +151,8 @@ bar_bracket_char_right=']'
 bar_fill_char='|'
 bar_background_char=' '
 
+bar_cf_folders=("/")
+bar_cf_labels=("/")
 
 ##==============================================================================
 ## OTHERS

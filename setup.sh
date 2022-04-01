@@ -139,3 +139,5 @@ case "$DISTRO" in
 	'raspbian' )	cp "$INPUT_CONFIG_DIR/os/synth-shell-greeter.raspbian.config" "$CONFIG_FILE" ;;
 	*)		cp "$INPUT_CONFIG_DIR/synth-shell-greeter.config.default" "$CONFIG_FILE" ;;
 esac
+
+cp "$INPUT_CONFIG_DIR/synth-shell-greeter.config.default" "$CONFIG_FILE"
